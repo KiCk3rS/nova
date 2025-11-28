@@ -20,7 +20,8 @@ import {
   Accessibility,
   Palette,
   Cloud,
-  Box
+  Box,
+  Bot
 } from "lucide-react";
 
 // Composants SVG pour les logos de langages
@@ -198,7 +199,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-neutral-900 to-neutral-600 dark:from-white dark:to-neutral-400">
-              Les 4 Piliers de NOVA
+              Les 5 Piliers de NOVA
             </h2>
             <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto text-lg">
               Une architecture complète couvrant tout le cycle de vie de vos produits numériques.
@@ -206,6 +207,45 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(180px,auto)]">
+
+            {/* Carte 5: Serveur MCP (Mis en avant) */}
+            <div className="md:col-span-3 rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900 dark:from-blue-900 dark:to-neutral-900 text-white p-8 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden group hover:shadow-xl transition-all duration-300 border border-blue-500/30 dark:border-blue-800/50">
+              {/* Background Abstract */}
+              <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px] opacity-20"></div>
+              <div className="absolute -right-20 -top-20 w-96 h-96 bg-white/10 rounded-full blur-3xl group-hover:bg-white/20 transition-colors"></div>
+              
+              <div className="relative z-10 flex-1">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-white backdrop-blur-sm">
+                    <Bot className="w-5 h-5" />
+                  </div>
+                  <span className="h-10 px-4 rounded-xl bg-white/10 text-white text-xs font-bold border border-white/10 flex items-center backdrop-blur-sm">
+                    NOVA Intelligence
+                  </span>
+                  <span className="px-2 py-1 rounded bg-white text-blue-900 text-[10px] font-bold uppercase tracking-wider shadow-lg">
+                    Nouveau
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold mb-3 text-white">Serveur MCP & IA Ready</h3>
+                <p className="text-blue-100 dark:text-neutral-300 max-w-2xl font-medium">
+                  Connectez vos assistants IA (Claude, Cursor) directement au contexte du projet via le protocole MCP.
+                  Interrogation structurelle, automatisation et génération de code contextuelle.
+                </p>
+              </div>
+
+              <div className="relative z-10 flex items-center gap-4 pr-8">
+                 <div className="flex flex-col gap-2">
+                    <div className="px-4 py-2 rounded-lg bg-black/20 border border-white/10 backdrop-blur-sm text-sm font-mono text-green-300 flex items-center gap-2 shadow-inner">
+                      <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
+                      MCP Server Active
+                    </div>
+                    <div className="px-4 py-2 rounded-lg bg-black/20 border border-white/10 backdrop-blur-sm text-sm font-mono text-blue-200 flex items-center gap-2 opacity-90 shadow-inner">
+                      <Terminal className="w-3 h-3" />
+                      Context: 100%
+                    </div>
+                 </div>
+              </div>
+            </div>
             
             {/* Carte 1: Modèle de données (Large) */}
             <div className="md:col-span-2 rounded-3xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-8 flex flex-col justify-between overflow-hidden relative group hover:shadow-xl transition-all duration-300">

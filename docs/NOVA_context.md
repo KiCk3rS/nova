@@ -33,6 +33,12 @@ NOVA repose sur **quatre piliers majeurs**, destinés à couvrir tout le cycle d
 - Documentation générée automatiquement depuis les définitions du domaine, des composants et des interfaces.
 - Portail central regroupant documentation, guides d’onboarding, changelogs et best practices.
 
+### 5. Connectivité IA et Serveur MCP
+NOVA intègre nativement un serveur compatible avec le **Model Context Protocol (MCP)**. Cette brique technologique permet de transformer le projet en une ressource "IA-ready", facilitant l'interaction avec les assistants virtuels (Claude, Cursor, etc.).
+- **Accès contextuel sécurisé** : Les agents IA peuvent interroger la structure du projet, les documents et le modèle de données via une interface standardisée.
+- **Automatisation avancée** : Possibilité de créer des workflows où l'IA interagit directement avec les outils du projet.
+- **Interopérabilité** : Un standard ouvert pour connecter NOVA aux futurs outils de l'écosystème IA.
+
 ## Enjeux et Objectifs
 
 ### Uniformiser les pratiques entre les filiales  
